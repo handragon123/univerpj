@@ -16,8 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vector"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="302dp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/TextView1"
@@ -48,14 +47,13 @@
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/add_btn"
-
-        app:layout_constraintEnd_toEndOf="@id/ImageView1"
-        app:layout_constraintBottom_toBottomOf="@id/ImageView1"
         android:background="@android:color/transparent"
 
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="284dp" />
+        app:layout_constraintBottom_toBottomOf="@id/ImageView1"
+        app:layout_constraintEnd_toEndOf="@id/ImageView1"
+        app:srcCompat="@drawable/add_btn"
+
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/password_mod"
@@ -73,45 +71,49 @@
         android:id="@id/new_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:text="새로운 비밀번호"
         android:textSize="14dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_mod"/>
+        app:layout_constraintTop_toBottomOf="@id/password_mod"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@id/password1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/new_password"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_password"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@id/ch_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:text="비밀번호 확인"
         android:textSize="14dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password1"/>
+        app:layout_constraintTop_toBottomOf="@id/password1"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@id/ch_password1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ch_password"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ch_password"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/info_mod"
@@ -129,101 +131,110 @@
         android:id="@id/grade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:text="학년"
         android:textSize="14dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/info_mod"/>
+        app:layout_constraintTop_toBottomOf="@id/info_mod"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@id/grade1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/grade"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grade"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@id/class1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:text="반"
         android:textSize="14dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/grade1"/>
+        app:layout_constraintTop_toBottomOf="@id/grade1"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@id/class2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/class1"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/class1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@id/email_mod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:text="이메일 변경"
         android:textSize="14dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/class2"/>
+        app:layout_constraintTop_toBottomOf="@id/class2"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@id/email_mod1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_mod"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_mod"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/send_email"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="@color/white"
         android:text="인증하기"
         android:textColor="@color/black"
         android:textSize="10dp"
-        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_mod1"/>
+        app:layout_constraintTop_toBottomOf="@+id/email_mod1"
+        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@id/email_ch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
         android:text="인증번호"
         android:textSize="14dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_mod1"/>
+        app:layout_constraintTop_toBottomOf="@id/email_mod1"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@id/email_ch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_ch"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_ch"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <android.widget.Button
         android:id="@+id/remove"
